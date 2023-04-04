@@ -129,8 +129,8 @@ curl "https://snapshots1.nodejumper.io/aura/${SNAP_NAME}" | lz4 -dc - | tar -xf 
 
 # start service
 sudo systemctl daemon-reload
-sudo systemctl enable nibid
-sudo systemctl restart nibid
+sudo systemctl enable aurad
+sudo systemctl restart aurad
 
 break
 ;;
